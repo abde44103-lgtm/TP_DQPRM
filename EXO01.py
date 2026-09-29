@@ -17,3 +17,4 @@ def indice_de_masse_corporelle(taille, masse):
 
 # Exemple d'appel pour une personne de 1,75 m et 70 kg :
 imc = indice_de_masse_corporelle(1.75, 70)
+
