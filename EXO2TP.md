@@ -16,9 +16,21 @@ import pandas as pd
 
 df = pd.read_csv("data/glycemie.csv", sep=";", decimal=",")
 df
+
 **Question 2 :** 
+
 plt.figure(figsize=(10, 6))
 temps = df.iloc[:, 0]
 for colonne in df.columns[1:]:
     plt.plot(temps, df[colonne])
+
+**Question 3 :**
+
+plt.xlabel("Temps") 
+plt.ylabel("Glycémie (g/L)") 
+plt.title("Variation de la glycémie au cours du temps") 
+plt.legend() 
+plt.grid(True) 
+ 
+plt.show()  
 
