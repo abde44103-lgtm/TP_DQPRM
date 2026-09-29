@@ -11,7 +11,11 @@ def indice_de_masse_corporelle(taille, masse):
     elif 30 < imc <= 40:
         print("Valeur d'IMC indiquant une obésité")
     else:
+<<<<<<< HEAD
         print("Valeur d'IMC indiquant une obésité  bien massive")
+=======
+        print("Valeur d'IMC indiquant une obésité sévère")
+>>>>>>> b3a84a98a282eacb19786a1f790ae953248a3b30
         
     return imc
 
