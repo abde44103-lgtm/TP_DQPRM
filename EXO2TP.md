@@ -16,5 +16,12 @@ import pandas as pd
 
 df = pd.read_csv("data/glycemie.csv", sep=";", decimal=",")
 df
+# Question 2 : Tracé des courbes sur un même graphique avec dimensions fixées
+plt.figure(figsize=(10, 6))
 
+# Récupération du temps (première colonne) et tracé de chaque colonne de mesure
+temps = df.iloc[:, 0]
+
+for colonne in df.columns[1:]:
+    plt.plot(temps, df[colonne])
 
